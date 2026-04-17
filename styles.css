@@ -1,0 +1,74 @@
+
+
+/* ===================== styles.css ===================== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0d0d0d;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: #111;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+}
+
+.skills-grid div {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+@media(max-width:768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+
